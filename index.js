@@ -24,6 +24,15 @@ function destructivelyRemoveFirstKitten() {
 function appendKitten(name) {
   var resultArr = [...kittens, name];
   return resultArr;
-
 }
 // Add your functions and code here
+
+function prependKitten(name) {
+  var resultArr = [name, ...kittens];
+  return resultArr;
+}
+
+function removeLastKitten() {
+  var resultArr = removeLastKitten.slice(0, kittens.length - 1);
+  return resultArr;
+}
